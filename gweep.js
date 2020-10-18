@@ -2,6 +2,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const { Client, Util } = require("discord.js");
 const fs = require("fs");
+const ayarlar = require("gweepcreative.json");
 require("./util/eventLoader")(client);
 
 client.ayarlar = { 
@@ -126,7 +127,7 @@ client.elevation = message => {
 
 var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g
 
-client.login(client.ayarlar.token);
+client.login(client.gweepcreative.token);
 const moment = require('moment');
 moment.locale('tr');
 const { S_IFREG } = require("constants");

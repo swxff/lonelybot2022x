@@ -9,7 +9,7 @@ if(message.channel.nsfw == false) return message.channel.send(new Discord.Messag
 if(await data.fetch(`slm.${message.author.id}.${message.guild.id}.ass`)) return message.channel.send(new Discord.MessageEmbed().setColor('#00001').setDescription(`**10 saniyenin altında hızlı kullanamazsın!**`));
 DabiClient.nsfw.real.ass().then(json => {
 message.channel.send(new Discord.MessageAttachment(json.url));
-data.set(`slm.${message.author.id}.${message.guild.id}.ass`, 'codare');
+data.set(`slm.${message.author.id}.${message.guild.id}.ass`, 'Gweep Creative');
 setTimeout(() => {
 data.delete(`slm.${message.author.id}.${message.guild.id}.ass`)
 }, 10000);
