@@ -1,27 +1,33 @@
 {
-  "//1": "describes your app and its dependencies",
-  "//2": "https://docs.npmjs.com/files/package.json",
-  "//3": "updating this file will download and update your packages",
   "name": "hello-express",
-  "version": "0.0.1",
-  "description": "A simple Node app built on Express, instantly up and running.",
-  "main": "server.js",
+  "version": "1.0.0",
+  "description": "chimp#0110'in namı değer temiz altyapısı.",
+  "main": "chimp.js",
   "scripts": {
-    "start": "node server.js"
+    "watch": "nodemon chimp.js",
+    "start": "node chimp.js"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "canvacord": "^5.0.7",
+    "dabi-images": "^2.7.5",
+    "dctr-antispam.js": "^0.1.1",
+    "discord-logs": "^1.7.7",
+    "discord.js": "^12.3.1",
+    "fs": "0.0.1-security",
+    "funny-words": "^0.1.2",
+    "mathjs": "^7.5.1",
+    "moment": "^2.29.1",
+    "nsfwjs": "^2.2.0"
   },
   "engines": {
     "node": "12.x"
   },
-  "repository": {
-    "url": "https://glitch.com/edit/#!/hello-express"
-  },
   "license": "MIT",
   "keywords": [
-    "node",
-    "glitch",
-    "express"
-  ]
+    "chimp",
+    "chimp#0110"
+  ],
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
 }
