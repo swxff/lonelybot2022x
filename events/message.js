@@ -1,13 +1,13 @@
 const Discord = require('discord.js');
 const data = require('quick.db');
-const rabel = require("./ayarlar/rabel.json");
+const ayarlar = require("../ayarlar/rabel.json");
 
 module.exports = async message => {
   
   let client = message.client;
   if (message.author.bot) return;
   if (message.channel.type === 'dm') return;
-  let prefix = rabel.prefix;
+  let prefix = ayarlar.prefix;
   if (message.content.startsWith(prefix)) {
   let command = message.content.split(' ')[0].slice(prefix.length);
   let params = message.content.split(' ').slice(1);

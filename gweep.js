@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const { Client, Util } = require("discord.js");
 const fs = require("fs");
-const rabel = require("./ayarlar/rabel.json");
+const rabel = require("../ayarlar/rabel.json");
 require("./util/eventLoader")(client);
 
 
@@ -115,7 +115,7 @@ if(datas) return message.channel.send('`'+datas+'`');
 client.on('message', async message => {
 if(message.channel.type !== 'text') return;
 if(message.author.bot) return;
-if(message.content.startsWith(client.ayarlar.prefix+'afk')) return;
+if(message.content.startsWith(rabel.prefix+'afk')) return;
 if(message.mentions.members.first()) {
 let mention = message.mentions.members.first();
 const est = await data.fetch(`kullanıcı.${mention.id}.${message.guild.id}`);
