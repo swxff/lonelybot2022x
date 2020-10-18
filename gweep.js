@@ -2,44 +2,8 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const { Client, Util } = require("discord.js");
 const fs = require("fs");
+const rabel =("./ayarlar.json")
 require("./util/eventLoader")(client);
-
-client.ayarlar = { 
-"token": "NzY3MjQ2ODc1MzkyMjEzMDQy.X4vIVQ.3SMfRzgU8H8xqyhFLcypeim6GiU", // token
-"prefix": "!", // prefix
-"sahip": "",// sahip
-}
-
-
-/*
-
-Bu altyapı can ♡ b#1010(Gökhan Can Bulut) tarafından discord.gg/codare için yapılmıştır.
-Bot MIT license(lisansı silmek yasa dışıdır)'i ile paylaşılmıştır. Herhangi bir izinsiz paylaşma durumunda haklarımız devreye girmektedir.
-İstediğiniz gibi kullanabilirsiniz. Herhangi bir komut yaptırmak isteyen kullanıcılar http://chimp.wtf sitesini ziyaret edebilir.
-Altyapı "CloudUP" isimli Discord botundan örnek alınarak yapılmıştır.
-
-MIT License
-
-Copyright (c) 2020 chimp
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-*/
 
 
 client.commands = new Discord.Collection();
@@ -126,7 +90,7 @@ client.elevation = message => {
 
 var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g
 
-client.login(client.ayarlar.token);
+client.login(rabel.token);
 const moment = require('moment');
 moment.locale('tr');
 const { S_IFREG } = require("constants");
@@ -151,7 +115,7 @@ if(datas) return message.channel.send('`'+datas+'`');
 client.on('message', async message => {
 if(message.channel.type !== 'text') return;
 if(message.author.bot) return;
-if(message.content.startsWith(client.ayarlar.prefix+'afk')) return;
+if(message.content.startsWith(rabel.prefix+'afk')) return;
 if(message.mentions.members.first()) {
 let mention = message.mentions.members.first();
 const est = await data.fetch(`kullanıcı.${mention.id}.${message.guild.id}`);

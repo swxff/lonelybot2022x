@@ -1,11 +1,11 @@
 {
   "name": "hello-express",
   "version": "1.0.0",
-  "description": "chimp#0110'in namı değer temiz altyapısı.",
-  "main": "chimp.js",
+  "description": "Gweep Creative#0001 | RabeL",
+  "main": "gweep.js",
   "scripts": {
-    "watch": "nodemon chimp.js",
-    "start": "node chimp.js"
+    "watch": "nodemon gweep.js",
+    "start": "node gweep.js"
   },
   "dependencies": {
     "canvacord": "^5.0.7",
