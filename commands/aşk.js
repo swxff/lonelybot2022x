@@ -11,7 +11,7 @@ message.channel.send(new Discord.MessageEmbed().setTitle(`${message.author.usern
 .setDescription(`**Sevgilin ile aranda \`%${resimler}\` sevgin var.** 🥰`));
 message.delete({timeout:10000});
 
-data.set(`slm.${message.author.id}.${message.guild.id}.aşk`, 'Gweep Creative');
+data.set(`slm.${message.author.id}.${message.guild.id}.aşk`, 'codare');
 setTimeout(() => {
 data.delete(`slm.${message.author.id}.${message.guild.id}.aşk`)
 }, 20000);

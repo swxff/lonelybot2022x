@@ -67,13 +67,13 @@ message.guild.channels.create('🎤 | Teyit ²', {type: 'voice'}).then(a => a.se
 message.guild.channels.create('🎤 | Teyit ³', {type: 'voice'}).then(a => a.setParent(parent.id) && a.setUserLimit(5));
 });
 
-message.guild.channels.create('§▬▬▬「BİLGİLENDİRME」▬▬▬§', {type: 'category'}).then(parent => {
+message.guild.channels.create('§▬▬▬「GENEL」▬▬▬§', {type: 'category'}).then(parent => {
 message.guild.channels.create('📃・kurallar', {type: 'text'}).then(c => c.setParent(parent.id));
 message.guild.channels.create('📢・duyurular', {type: 'text'}).then(c => c.setParent(parent.id));
 message.guild.channels.create('💾・sunucu-logs', {type: 'text'}).then(c => c.setParent(parent.id));
 });
 
-message.guild.channels.create('☆▬▬「GENEL」▬▬☆', {type: 'category'}).then(parent => {
+message.guild.channels.create('☆▬▬「BİLGİLENDİRME」▬▬☆', {type: 'category'}).then(parent => {
 message.guild.channels.create('💬・sohbet', {type: 'text'}).then(c => c.setParent(parent.id));
 message.guild.channels.create('📷・foto-chat', {type: 'text'}).then(c => c.setParent(parent.id));
 message.guild.channels.create('🤖・bot-komut', {type: 'text'}).then(c => c.setParent(parent.id));

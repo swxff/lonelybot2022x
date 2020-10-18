@@ -10,7 +10,7 @@ message.channel.send(new Discord.MessageEmbed().setTitle(`${message.author.usern
 .setDescription(resimler).setColor('#cd0e63'));
 message.delete({timeout:10000});
 
-data.set(`slm.${message.author.id}.${message.guild.id}.fal`, 'Gweep Creative');
+data.set(`slm.${message.author.id}.${message.guild.id}.fal`, 'codare');
 setTimeout(() => {
 data.delete(`slm.${message.author.id}.${message.guild.id}.fal`)
 }, 10000);

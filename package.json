@@ -1,11 +1,11 @@
 {
   "name": "hello-express",
   "version": "1.0.0",
-  "description": "Gweep Creative nin namı değer temiz altyapısı.",
-  "main": "gweep.js",
+  "description": "chimp#0110'in namı değer temiz altyapısı.",
+  "main": "chimp.js",
   "scripts": {
-    "watch": "nodemon gweep.js",
-    "start": "node gweep.js"
+    "watch": "nodemon chimp.js",
+    "start": "node chimp.js"
   },
   "dependencies": {
     "canvacord": "^5.0.7",
@@ -24,8 +24,8 @@
   },
   "license": "MIT",
   "keywords": [
-    "Gweep Creative",
-    "Gweep Creative#0001"
+    "chimp",
+    "chimp#0110"
   ],
   "devDependencies": {
     "nodemon": "^2.0.4"
