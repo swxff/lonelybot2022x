@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const { Client, Util } = require("discord.js");
 const fs = require("fs");
-const rabel =("./ayarlar.json")
+const rabel = ("./ayarlar.json")
 require("./util/eventLoader")(client);
 
 
