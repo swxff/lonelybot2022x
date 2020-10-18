@@ -2,8 +2,13 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const { Client, Util } = require("discord.js");
 const fs = require("fs");
-const rabel = require("../ayarlar/rabel.json");
 require("./util/eventLoader")(client);
+
+client.ayarlar = { 
+"token": "NzQ1MjczNjQ4ODA1NDQ1Njcz.XzvYLA.u6sEK-C6ILGIO5tQ12TZiwNNr9o", // token
+"prefix": "-", // prefix
+"sahip": "586822327568695317",// sahip
+}
 
 
 client.commands = new Discord.Collection();
@@ -90,7 +95,7 @@ client.elevation = message => {
 
 var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g
 
-client.login(rabel.token);
+client.login(client.ayarlar.token);
 const moment = require('moment');
 moment.locale('tr');
 const { S_IFREG } = require("constants");
@@ -115,7 +120,7 @@ if(datas) return message.channel.send('`'+datas+'`');
 client.on('message', async message => {
 if(message.channel.type !== 'text') return;
 if(message.author.bot) return;
-if(message.content.startsWith(rabel.prefix+'afk')) return;
+if(message.content.startsWith(client.ayarlar.prefix+'afk')) return;
 if(message.mentions.members.first()) {
 let mention = message.mentions.members.first();
 const est = await data.fetch(`kullanıcı.${mention.id}.${message.guild.id}`);
