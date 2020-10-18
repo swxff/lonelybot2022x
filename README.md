@@ -1,2 +1,4 @@
-# cloudup
-CloudUP altyapısı, tarafımca yapılıp 18.10.2020 - 20:11'de paylaşılmıştır. Sonrasında paylaşılacak tüm CloudUP bot altyapısına tarafımca kaldırma yetkisine sahipim.
+# CLOUDUP
+BU BOT BİR BAŞKASI TARAFINDAN YAPILIP GWEEP CREATİVE TARAFINDAN PAYLAŞILMIŞTIR.
+
+(YOUTUBE KANALIM İÇİN TIKLA][https://youtube.com/GweepCreativeOfficial
