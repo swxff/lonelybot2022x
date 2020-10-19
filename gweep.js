@@ -2,12 +2,17 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const { Client, Util } = require("discord.js");
 const fs = require("fs");
-const rabel = ("./gweep/rabel.json")
 require("./util/eventLoader")(client);
 
 const log = message => {
   console.log(`${message}`);
 };
+
+client.ayarlar = { 
+"token": "NzQ1MjczNjQ4ODA1NDQ1Njcz.XzvYLA.A4BqBrymCjeUJlp9uiLuOA2Heak", // token
+"prefix": "-", // prefix
+"sahip": "586822327568695317",// sahip
+}
 
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
@@ -89,7 +94,7 @@ client.elevation = message => {
 
 var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g
 
-client.login(rabel.token);
+client.login(client.ayarlar.token);
 const moment = require('moment');
 moment.locale('tr');
 const { S_IFREG } = require("constants");
@@ -450,4 +455,4 @@ message.channel.send(`${message.author} ${command.respond}`);
 };
 });
 
-client.login(rabel.gweep);
+client.login(client.ayarlar.token);
