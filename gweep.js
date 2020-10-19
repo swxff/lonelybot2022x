@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const { Client, Util } = require("discord.js");
 const fs = require("fs");
-const rabel = ("./ayarlar.json")
+const rabel = ("./gweep/ayarlar.json")
 require("./util/eventLoader")(client);
 
 
@@ -125,7 +125,7 @@ message.channel.send(new Discord.MessageEmbed().setThumbnail(mention.user.avatar
 }
 }
 const stat = await data.fetch(`name.${message.author.id}.${message.guild.id}`);
-if(stat) {
+if(stat) {  
 message.member.setNickname(stat);
 data.delete(`kullanıcı.${message.author.id}.${message.guild.id}`);
 data.delete(`name.${message.author.id}.${message.guild.id}`);

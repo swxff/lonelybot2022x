@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const data = require('quick.db');
-const rabel = require('../ayarlar.json');
+const rabel = require('../gweep/ayarlar.json');
 
 module.exports = async message => {
   
