@@ -2,19 +2,19 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const { Client, Util } = require("discord.js");
 const fs = require("fs");
-const rabel = ("./gweep/ayarlar.json")
+const rabel = ("./gweep/rabel.json")
 require("./util/eventLoader")(client);
 
 
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
-fs.readdir("./commands/", (err, files) => {
+fs.readdir("./komutlar/", (err, files) => {
   if (err) console.error(err);
   const data = require('quick.db');
   console.log('')
   console.log(`${files.length} kadar komut yüklenecek.`)
   files.forEach(async f => {
-    let props = require(`./commands/${f}`);
+    let props = require(`./komutlar/${f}`);
     console.log(`Yüklendi: ${props.help.name}`);
     client.commands.set(props.help.name, props);
     props.conf.aliases.forEach(alias => {
@@ -28,8 +28,8 @@ fs.readdir("./commands/", (err, files) => {
 client.reload = command => {
   return new Promise((resolve, reject) => {
     try {
-      delete require.cache[require.resolve(`./commands/${command}`)];
-      let cmd = require(`./commands/${command}`);
+      delete require.cache[require.resolve(`./komutlar/${command}`)];
+      let cmd = require(`./komutlar/${command}`);
       client.commands.delete(command);
       client.aliases.forEach((cmd, alias) => {
         if (cmd === command) client.aliases.delete(alias);
@@ -48,7 +48,7 @@ client.reload = command => {
 client.load = command => {
   return new Promise((resolve, reject) => {
     try {
-      let cmd = require(`./commands/${command}`);
+      let cmd = require(`./komutlar/${command}`);
       client.commands.set(command, cmd);
       cmd.conf.aliases.forEach(alias => {
         client.aliases.set(alias, cmd.help.name);
@@ -63,8 +63,8 @@ client.load = command => {
 client.unload = command => {
   return new Promise((resolve, reject) => {
     try {
-      delete require.cache[require.resolve(`./commands/${command}`)];
-      let cmd = require(`./commands/${command}`);
+      delete require.cache[require.resolve(`./komutlar/${command}`)];
+      let cmd = require(`./komutlar/${command}`);
       client.commands.delete(command);
       client.aliases.forEach((cmd, alias) => {
         if (cmd === command) client.aliases.delete(alias);
@@ -90,7 +90,7 @@ client.elevation = message => {
 
 var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g
 
-client.login(rabel.token);
+client.login(rabel.gweep);
 const moment = require('moment');
 moment.locale('tr');
 const { S_IFREG } = require("constants");
