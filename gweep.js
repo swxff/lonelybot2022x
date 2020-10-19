@@ -5,24 +5,23 @@ const fs = require("fs");
 const rabel = ("./gweep/rabel.json")
 require("./util/eventLoader")(client);
 
+const log = message => {
+  console.log(`${message}`);
+};
 
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
 fs.readdir("./komutlar/", (err, files) => {
   if (err) console.error(err);
-  const data = require('quick.db');
-  console.log('')
-  console.log(`${files.length} kadar komut yüklenecek.`)
-  files.forEach(async f => {
+  log(`${files.length} komut yüklenecek.`);
+  files.forEach(f => {
     let props = require(`./komutlar/${f}`);
-    console.log(`Yüklendi: ${props.help.name}`);
+    log(`Yüklenen komut: ${props.help.name}.`);
     client.commands.set(props.help.name, props);
     props.conf.aliases.forEach(alias => {
       client.aliases.set(alias, props.help.name);
     });
   });
-  console.log('')
-
 });
 
 client.reload = command => {
@@ -90,7 +89,7 @@ client.elevation = message => {
 
 var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g
 
-client.login(rabel.gweep);
+client.login(rabel.token);
 const moment = require('moment');
 moment.locale('tr');
 const { S_IFREG } = require("constants");
@@ -450,3 +449,5 @@ if(command) {
 message.channel.send(`${message.author} ${command.respond}`);
 };
 });
+
+client.login(rabel.gweep);
