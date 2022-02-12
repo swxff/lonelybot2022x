@@ -7,7 +7,7 @@ exports.run = async (client, message, args) => {
   }
 
 let images = ['https://media.giphy.com/media/mBkM18U5OMSkTcDmeu/giphy.gif', 'https://media.giphy.com/media/RGRzukK0YNlQbZEUVP/giphy.gif'];
-message.channel.send(new Discord.MessageEmbed().setColor('#000001').setDescription(`**Yardım 3 Menüsüne Hoş Geldin Dostum 😇**
+message.channel.send(new Discord.MessageEmbed().setColor('#000001').setDescription(`**Sunucu Menüsüne Hoş Geldiniz 😇**
 \`\`\`${client.user.username} Kullanırken @CloudUP rolünü en yukarıda tutunuz.\`\`\`
 
 ❌ **\`${client.ayarlar.prefix}yasak-tag-sistem\`
@@ -42,10 +42,10 @@ Sunucunuzda ki tüm **rolleri** silerek yardımcı olur (**Sunucu Sahibi**)
 exports.conf = {
   enabled: true,
   guildOnly: true,
-  aliases: ['y3', 'help3'],
+  aliases: ['sv', 'server'],
   permLevel: 0
 }
 
 exports.help = {
-  name: 'yardım3'
+  name: 'sunucu'
 };
