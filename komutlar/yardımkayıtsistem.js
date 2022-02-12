@@ -7,7 +7,7 @@ exports.run = async (client, message, args) => {
   }
 
 let images = ['https://cdn.discordapp.com/attachments/941759205977772114/942118845143973968/standard_4.gif'];
-message.channel.send(new Discord.MessageEmbed().setColor('#000001').setDescription(`**Lonely Kayıt Menüsüne Hoş Geldiniz :innocent:
+message.channel.send(new Discord.MessageEmbed().setColor('#000001').setDescription(`**Kayıt Menüsüne Hoş Geldiniz :innocent:
 ${client.user} Kullanırken \`@Lonely\` rolünü en yukarıda tutunuz.**
 **
 🐝 \`${client.ayarlar.prefix}diğer\`

@@ -8,7 +8,7 @@ exports.run = async (client, message, args) => {
 
 let images = ['https://cdn.discordapp.com/attachments/941759205977772114/942118231244681266/standard_3.gif'];
 message.channel.send(new Discord.MessageEmbed().setColor('#000001').setDescription(`**Sunucu Menüsüne Hoş Geldiniz 😇**
-\`\`\`${client.user.username} Kullanırken @CloudUP rolünü en yukarıda tutunuz.\`\`\`
+\`\`\`${client.user.username} Kullanırken @Lonely rolünü en yukarıda tutunuz.\`\`\`
 
 ❌ **\`${client.ayarlar.prefix}yasak-tag-sistem\`
 Sunucunuz için güvenliği arttırın
