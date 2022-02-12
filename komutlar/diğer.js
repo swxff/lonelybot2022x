@@ -27,7 +27,7 @@ message.channel.send(new Discord.MessageEmbed().setColor('#000001').setDescripti
 🌟 \`${client.ayarlar.prefix}yavaş-mod\`
 **Lonely üyelerinizin belirlediğiniz sürede bir mesaj yazmasını sağlar**
 
-\`${client.ayarlar.prefix}emote\`
+:innocent: \`${client.ayarlar.prefix}emote\`
 **Emoji URL veya Emoji girerek eğlenceli emojinin çizilimini atar**
 
 🐝 \`${client.ayarlar.prefix}emoji\`

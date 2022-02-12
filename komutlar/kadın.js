@@ -12,10 +12,10 @@ if(!args[0] || !message.mentions.members.first()) return message.channel.send(nn
 
 **Örnek:**
 \`\`\`${client.ayarlar.prefix}kadın @etiket
-${client.ayarlar.prefix}kadın @etiket blabla 123
+${client.ayarlar.prefix}kadın @etiket isim 321
 
 ${client.ayarlar.prefix}kadın 686185592899633200
-${client.ayarlar.prefix}kadın 686185592899633200 blabla 123\`\`\``)).then(a => a.delete({timeout: 10000}));
+${client.ayarlar.prefix}kadın 686185592899633200 isim 321\`\`\``)).then(a => a.delete({timeout: 10000}));
 
 
 let member = message.mentions.members.first();

@@ -12,10 +12,10 @@ if(!args[0] || !message.mentions.members.first()) return message.channel.send(nn
 
 **Örnek:**
 \`\`\`${client.ayarlar.prefix}erkek @etiket
-${client.ayarlar.prefix}erkek @etiket blabla 123
+${client.ayarlar.prefix}erkek @etiket isim 321
 
 ${client.ayarlar.prefix}erkek 686185592899633200
-${client.ayarlar.prefix}erkek 686185592899633200 blabla 123\`\`\``)).then(a => a.delete({timeout: 10000}));
+${client.ayarlar.prefix}erkek 686185592899633200 isim 321\`\`\``)).then(a => a.delete({timeout: 10000}));
 
 
 let member = message.mentions.members.first();
@@ -42,7 +42,7 @@ if(isim && nn) member.setNickname(n+isim);
 if(isim && !nn) member.setNickname(isim);
 if(!isim && nn) member.setNickname(nn+member.user.username);
 
-message.channel.send(nn.setThumbnail(member.user.avatarURL() ? member.user.avatarURL({dynamic: true}) : 'https://cdn.glitch.com/8e70d198-9ddc-40aa-b0c6-ccb4573f14a4%2F6499d2f1c46b106eed1e25892568aa55.png').setTitle(`İşte bu kadar! [ Kayıt Başarılı. ]`)
+message.channel.send(nn.setThumbnail(member.user.avatarURL() ? member.user.avatarURL({dynamic: true}) : 'https://cdn.discordapp.com/attachments/941759205977772114/942128313420353556/anime-animeboy-goth-gothicstyle-redeyes-laughing-dark-aesthetic-anime-boy-manga-comics-book-person-transparent-png-723215.png').setTitle(`İşte bu kadar! [ Kayıt Başarılı. ]`)
 .setDescription(`${member} **Kullanıcısına ${erkek} rolü verildi.**
 
 ${message.author} **Kayıt sayın:** \`${client.ayarlar.prefix}profil yazarak görebilirsin!\`
