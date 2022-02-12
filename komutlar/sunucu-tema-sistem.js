@@ -22,9 +22,7 @@ message.channel.send(new Discord.MessageEmbed()
 **Hazır gif share sunucu teması yollar**
 
 \`${client.ayarlar.prefix}sunucu-kur\` 
-**Klasik oyun & sohbet sunucusu kurar**
-
-\`\`\`Farklı temalar için, Kendi sunucu şablonunuzu bize iletebilirsin!\`\`\``)
+**Klasik oyun & sohbet sunucusu kurar**`)
 .setThumbnail('https://cdn.discordapp.com/avatars/686185592899633200/6499d2f1c46b106eed1e25892568aa55.webp?size=512'));
 
 };

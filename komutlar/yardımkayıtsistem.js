@@ -8,16 +8,8 @@ exports.run = async (client, message, args) => {
 
 let images = ['https://cdn.discordapp.com/attachments/941759205977772114/942118845143973968/standard_4.gif'];
 message.channel.send(new Discord.MessageEmbed().setColor('#000001').setDescription(`**Kayıt Menüsüne Hoş Geldiniz :innocent:
-${client.user} Kullanırken \`@Lonely\` rolünü en yukarıda tutunuz.**
+${client.user} Kullanırken \`@Lonely\` rolünü en üstte tutunuz.**
 **
-🐝 \`${client.ayarlar.prefix}diğer\`
-Gerekli olabilecek komutlar
-
-💸 \`${client.ayarlar.prefix}kutusuz-mesaj-yönet\`
-Kendinize özgün kutusuz normal olarak karşılama mesajı & hareketli GIF ayarlarsınız [ Ücretlidir. ]
-
-💸 \`${client.ayarlar.prefix}kutulu-mesaj-yönet\`
-Kendinize özgün Kutu içerğinde karşılama mesajı & hareketli GIF ayarlarsınız [ Ücretlidir. ]
 
 📋 \`${client.ayarlar.prefix}kayıt-mesaj\`
 Kayıt kanalında ki üyeleri karşılayan sistem
@@ -28,10 +20,16 @@ Kayıt kanalında ki üyeleri karşılayan sistem
 ✍️ \`${client.ayarlar.prefix}mesaj-tag\`
 Tag ayarlamak için kullanımı basit sistem
 
+🐝 \`${client.ayarlar.prefix}diğer\`
+Gerekli olabilecek komutlar
+
 🍃 \`${client.ayarlar.prefix}tagrol-sistem\`
 Sunucunuz da tag ve ya emoji tarzı kullananlar için stabil sistem**
 
-**🦋 \`${client.ayarlar.prefix}isim\`**
+**🦋 \`${client.ayarlar.prefix}koruma aç\` & \`${client.ayarlar.prefix}koruma kapat\`**
+Aktif Koruma Sistem **7 Adet Sunucunuz için koruma sistem aktif edersin**
+
+**🌟 \`${client.ayarlar.prefix}isim\`**
 İsmin başına birşey ekletmek için **.isim-tag** kullanabilirsin. Etiketlediğiniz **üyenin ismini** değişirsiniz
 
 **🍏 \`${client.ayarlar.prefix}say\`**
@@ -39,9 +37,6 @@ Sunucu içerisinde ki **toplam üye**, **taglı üye**, **aktif üye**, **erkek 
 
 **🎐 \`${client.ayarlar.prefix}aktiflik aç\` & \`${client.ayarlar.prefix}aktiflik kapat\`**
 Aktiflik Sistem **(.profile & .profile [@etiket]**) **- ne kadar kayıt etmiş bilgilerini görebilirsin**
-
-**🌟 \`${client.ayarlar.prefix}koruma aç\` & \`${client.ayarlar.prefix}koruma kapat\`**
-Aktif Koruma Sistem **7 Adet Sunucunuz için koruma sistem aktif edersin**
 
 
 **Müzik botu arıyorsan, Lonely Music tam senin istediğin gibi hizmetinde! » **[Tıkla](https://discord.com/oauth2/authorize?client_id=933838376237420654&scope=bot&permissions=0) 

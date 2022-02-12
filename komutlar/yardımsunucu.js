@@ -8,10 +8,7 @@ exports.run = async (client, message, args) => {
 
 let images = ['https://cdn.discordapp.com/attachments/941759205977772114/942118231244681266/standard_3.gif'];
 message.channel.send(new Discord.MessageEmbed().setColor('#000001').setDescription(`**Sunucu Menüsüne Hoş Geldiniz 😇**
-\`\`\`${client.user.username} Kullanırken @Lonely rolünü en yukarıda tutunuz.\`\`\`
-
-❌ **\`${client.ayarlar.prefix}yasak-tag-sistem\`
-Sunucunuz için güvenliği arttırın
+\`\`\`${client.user.username} Kullanırken @Lonely rolünü en üstte tutunuz.\`\`\`
 
 ✨ \`${client.ayarlar.prefix}oto-isim-sistem\`
 Sunucunuza giren kullanıcıya istediğiniz şekilde otomatik isim ile adlandırmış yapabilirsin
@@ -19,14 +16,17 @@ Sunucunuza giren kullanıcıya istediğiniz şekilde otomatik isim ile adlandır
 📁 \`${client.ayarlar.prefix}komut-mesaj-sistem\`**
 Sunucunuz için istediğiniz kadar **komut & **cevap** oluşturabilirsin**
 
+❌ **\`${client.ayarlar.prefix}yasak-tag-sistem\`
+Sunucunuz için güvenliği arttırın
+
 ❕ \`${client.ayarlar.prefix}fake-hesap-sistem\`**
 Sunucunuza giren kullanıcı __5 gün__ içerisin de hesabını oluşturmuş ise cezalı verir
 
-🚀 \`${client.ayarlar.prefix}sunucu-tema-sistem\`**
-Topluluk bağışları ile sunucu şablonlarına sahip ol! **${client.ayarlar.prefix}sunucu-kur** kullanabilirsin**
-
 🐝 \`${client.ayarlar.prefix}kanal arındır\`**
 Sunucunuzda ki tüm **kanalları** silerek yardımcı olur (**Sunucu Sahibi**)
+
+🚀 \`${client.ayarlar.prefix}sunucu-tema-sistem\`**
+Topluluk bağışları ile sunucu şablonlarına sahip ol! **${client.ayarlar.prefix}sunucu-kur** kullanabilirsin**
 
 🐝 \`${client.ayarlar.prefix}rol arındır\`
 Sunucunuzda ki tüm **rolleri** silerek yardımcı olur (**Sunucu Sahibi**)
