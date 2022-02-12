@@ -10,7 +10,7 @@ const log = message => {
 //gweep creative
 client.ayarlar = { 
 "token": "OTQxMzk0MjE4NDk1MTE1Mjk1.YgVTrw.uvv2BiNlLaUv1WuwzJdlKRzcYGc", // token
-"prefix": "-", // prefix
+"prefix": ".", // prefix
 "sahip": "315875588906680330",// sahip
 }
 //gweep creative
