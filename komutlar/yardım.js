@@ -6,29 +6,36 @@ exports.run = async (client, message, args) => {
     return this[Math.floor(Math.random() * this.length)];
   }
 
-let images = ['https://media.giphy.com/media/mBkM18U5OMSkTcDmeu/giphy.gif', 'https://media.giphy.com/media/RGRzukK0YNlQbZEUVP/giphy.gif'];
-message.channel.send(new Discord.MessageEmbed().setColor('#000001').setDescription(`**Lonely Ana Menüsüne Hoş Geldin Dostum :innocent:
-${client.user} Kullanırken \`@Lonely\` rolünü en yukarıda tutunuz.**
+let images = ['https://cdn.discordapp.com/attachments/941759205977772114/942111517397098556/xddx.gif'];
+message.channel.send(new Discord.MessageEmbed().setColor('#000001').setDescription(`**Lonely Yardım Menüsüne Hoşgeldiniz :innocent:
+${client.user} Kullanırken \`@Lonely\` rolünü en yukarıda tutunuz.
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬**
 **
-🐝 \`${client.ayarlar.prefix}kayıt-sistem\`
+📁 \`${client.ayarlar.prefix}kayıt-sistem\`
 
-> Kayıt, Kutulu \`&\` Kutusuz, Diğer, Tag rol,
-> Koruma, Say, Aktiflik, Mesaj tag
+> Kayıt Sistemi, Tag rol, Koruma,
+> Say, Aktiflik, Mesaj tag \`ve dahası..\`
 
 🆙 \`${client.ayarlar.prefix}seviye-sistem\`
 
 > Basit Seviye, Seviye sıralaması & büyük 
 > depolama alan
 
-🦋 \`${client.ayarlar.prefix}yardım2\` Menüsün de neler var?
+🦋 \`${client.ayarlar.prefix}moderasyon\` Menüsüne erişebilirsiniz.
 
 > Mute, Karantina, Ban, Toplu rol, Sayaç \`&\` Oto 
 > rol, Kısıtlamalar
 
-🔥 \`${client.ayarlar.prefix}yardım3\` Menüsün de neler var?
+🔥 \`${client.ayarlar.prefix}sunucu\` Menüsüne erişebilirsiniz.
 
 > Yasak tag, Oto isim, Komut mesaj, Fake hesap, 
 > Sunucu tema, Kanal arındır \`&\` Rol arındır
+
+🎮 \`${client.ayarlar.prefix}eğlence\` Menüsüne erişebilirsiniz.
+
+> doldurulcak
+> doldurulcak
+
 
 **`).setThumbnail(message.author.avatarURL() ? message.author.avatarURL({dynamic: true}) : 'https://cdn.discordapp.com/attachments/933845017167020092/942086924905086986/Aesthetic-Anime-Pfp-Background-PNG.png').setImage(images.random()))
 
