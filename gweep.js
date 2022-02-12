@@ -264,13 +264,13 @@ client.on('roleDelete', async role => {
   if(guild.memberCount >= sayı) {
   data.delete(`sayaç.sayı.${guild.id}`);
   data.delete(`sayaç.kanal.${guild.id}`);
-  channel.send(`> \`${user.tag}\` **az önce katıldı... yoksa katılmadı mı?**
+  channel.send(`> \`${user.tag}\` **az önce katıldı...**
   
   > **Toplam da** \`${guild.memberCount}\` **Kişi olduk! Sayaç tamamlandı! 🎉**
   
   ${rol}`)
   } else {
-  channel.send(`> \`${user.tag}\` **az önce katıldı... yoksa katılmadı mı?**
+  channel.send(`> \`${user.tag}\` **az önce katıldı...**
   
   > **Toplam da** \`${guild.memberCount}\` **Kişi olduk!** \`${sayı}\` **Kullanıcı olmasına** \`${sayı-Number(guild.memberCount)}\` **Kullanıcı kaldı!**
   
@@ -457,7 +457,8 @@ client.login(process.env.TOKEN);
 
 const emmmmbed = new Discord.MessageEmbed()
 .addField(`Lonely Bot ©️  | Teşekkürler`, `**Selamlar, Ben Swaff (Developer) Öncelikle Botumuzu Eklediğiniz İçin Teşekkürler!**`)
-.addField(`Lonely Bot ©️  | Nasıl Kullanılır?`, `**Lonely  botun tüm özelliklerinden yararlanabilmek için sadece \`l!yardım\` yazmanız yeterlidir.**`)
+.addField(`Lonely Bot ©️  | Nasıl Kullanılır?`, `**Lonely botun tüm özelliklerinden yararlanabilmek için sadece \`.yardım\` yazmanız yeterlidir.**`)
+.addField(`Lonely Bot ©️  | Bug Bildir`, `**Bot hakkında bugları bildirmek için \`.bug-bildir bug\`  yazmanız yeterlidir.**`)
 .setFooter(`Lonely Bot ©️  | 2022`)
   .setImage("https://cdn.discordapp.com/attachments/941759205977772114/942111517397098556/xddx.gif")
   .setThumbnail("https://cdn.discordapp.com/attachments/942130580030636043/942130826542456883/anime-animeboy-goth-gothicstyle-redeyes-laughing-dark-aesthetic-anime-boy-manga-comics-book-person-transparent-png-723215.png")

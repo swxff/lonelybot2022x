@@ -32,7 +32,7 @@ ${client.user} Kullanırken \`@Lonely\` rolünü en yukarıda tutunuz.
 > tokat, fal ve dahası..
 **
 
-**Müzik botu arıyorsan, Lonely Music tam senin istediğin gibi hizmetinde! Şuradan ulaşabilirsin** » [Hemen Ekle!](https://discord.com/oauth2/authorize?client_id=933838376237420654&scope=bot&permissions=0) 
+**Müzik botu arıyorsan, Lonely Music tam senin istediğin gibi hizmetinde! » **[Tıkla](https://discord.com/oauth2/authorize?client_id=933838376237420654&scope=bot&permissions=0) 
 `).setThumbnail(message.author.avatarURL() ? message.author.avatarURL({dynamic: true}) : 'https://cdn.discordapp.com/attachments/933845017167020092/942086924905086986/Aesthetic-Anime-Pfp-Background-PNG.png').setImage(images.random()))
 
 };
