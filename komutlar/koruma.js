@@ -4,7 +4,7 @@ const data = require('quick.db');
 exports.run = async (client, message, args) => {
   const nn = new Discord.MessageEmbed().setThumbnail();
   if(!message.member.permissions.has('ADMINISTRATOR')) return message.channel.send(nn.setImage('https://media.giphy.com/media/Y41ynggo39awUmeg70/giphy.gif').setTitle(`Bir hata oldu!`).setThumbnail(message.author.avatarURL({dynamic: true})).setDescription(`**•** \`${client.ayarlar.prefix}koruma\` **kullanmak için,** \`Yönetici\` **yetkisine sahip olman gerekiyor.**`)).then(a => a.delete({timeout: 10000}));
-if(message.author.id !== message.guild.owner.id) return message.channel.send(nn.setImage('https://i.imgur.com/KKywwBj.png').setTitle(`Bir hata oldu!`).setThumbnail(message.author.avatarURL({dynamic: true})).setDescription(`**•** \`${client.ayarlar.prefix}koruma\` **kullanmak için,** \`Sunucu Sahibi\` **olmanız gerekiyor.
+if(message.author.id !== message.guild.owner.id) return message.channel.send(nn.setImage('https://cdn.discordapp.com/attachments/942132842954104842/942134151660838962/dddddd.png').setTitle(`Bir hata oldu!`).setThumbnail(message.author.avatarURL({dynamic: true})).setDescription(`**•** \`${client.ayarlar.prefix}koruma\` **kullanmak için,** \`Sunucu Sahibi\` **olmanız gerekiyor.
 
 Sunucu Sahibi**
 ${message.guild.owner.user.tag}`))
