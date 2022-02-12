@@ -124,7 +124,7 @@ if(message.mentions.members.first()) {//gweep creative
 let mention = message.mentions.members.first();
 const est = await data.fetch(`kullanıcı.${mention.id}.${message.guild.id}`);
 if(est) {
-message.channel.send(new Discord.MessageEmbed().setThumbnail(mention.user.avatarURL() ? mention.user.avatarURL({dynamic: true}) : 'https://cdn.glitch.com/8e70d198-9ddc-40aa-b0c6-ccb4573f14a4%2F6499d2f1c46b106eed1e25892568aa55.png')
+message.channel.send(new Discord.MessageEmbed().setThumbnail(mention.user.avatarURL() ? mention.user.avatarURL({dynamic: true}) : 'https://cdn.discordapp.com/attachments/942130580030636043/942130826542456883/anime-animeboy-goth-gothicstyle-redeyes-laughing-dark-aesthetic-anime-boy-manga-comics-book-person-transparent-png-723215.png')
 .setTitle('Tıkladığın Kullanıcı AFK').setDescription(` \n**• __Sebep;__ \`${est}\`**`));
 }
 }//gweep creative
@@ -150,13 +150,13 @@ let log = guild.channels.cach.eget(logFetch);//gweep creative
 if(oldUser.username === newUser.username) return;
 if(newUser.username.includes(tag) && !oldUser.username.includes(tag)) {
 log.send(new Discord.MessageEmbed()
-.setTitle('CloudUP - TAG Alındı.')
+.setTitle('Lonely - TAG Alındı.')
 .setDescription(`${newUser} **Aramıza hoşgeldin. \`${tag}\` tagını aldığı için ${role} rolü verildi!**`));
 guild.members.cache.get(newUser.id).roles.add(role.id);
 }
 if(oldUser.username.includes(tag) && !newUser.username.includes(tag)) {
 log.send(new Discord.MessageEmbed()
-.setTitle('CloudUP - TAG Çıkarıldı.')//gweep creative
+.setTitle('Lonely - TAG Çıkarıldı.')//gweep creative
 .setColor('#f1c335')
 .setDescription(`${newUser} **Aramızdan ayrıldı. \`${tag}\` tagını çıkardığı için ${role} rolü alındı!**`));
 guild.members.cache.get(newUser.id).roles.remove(role.id);

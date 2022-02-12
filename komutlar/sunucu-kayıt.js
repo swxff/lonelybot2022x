@@ -17,12 +17,17 @@ __Tek komut ile kayıt ve isim yapabilirsin.__**
 > 🗑️ **${client.ayarlar.prefix}yetkili-sil**
 > 🗑️ **${client.ayarlar.prefix}kayıtsız-sil**
 
+\`\`\`        [ Kayıt Komutları ]        \`\`\`
+> 🗑️ **${client.ayarlar.prefix}e @etiket**
+> 🗑️ **${client.ayarlar.prefix}e @etiket isim yaş**
+> 🗑️ **${client.ayarlar.prefix}k @etiket**
+> 🗑️ **${client.ayarlar.prefix}k @etiket isim yaş**
+
 \`\`\`İsim başına tag koyması için
 .kayıt-tag 🔥
-.kayıt-tag-kapat\`\`\``
-                                                                                  \`\`\`İsim başına tag koyması için)
+.kayıt-tag-kapat\`\`\``)
 
-.setThumbnail(message.author.avatarURL() ? message.author.avatarURL({dynamic: true}) : 'https://cdn.glitch.com/8e70d198-9ddc-40aa-b0c6-ccb4573f14a4%2F6499d2f1c46b106eed1e25892568aa55.png'));
+.setThumbnail(message.author.avatarURL() ? message.author.avatarURL({dynamic: true}) : 'https://cdn.discordapp.com/attachments/942130580030636043/942130826542456883/anime-animeboy-goth-gothicstyle-redeyes-laughing-dark-aesthetic-anime-boy-manga-comics-book-person-transparent-png-723215.png'));
 
 };
 exports.conf = {

@@ -3,7 +3,7 @@ const data = require('quick.db');
 
 exports.run = async (client, message, args) => {
 if(!message.member.permissions.has('MANAGE_MESSAGES')) return message.channel.send(new Discord.MessageEmbed().setColor('#000001').setDescription(`${message.author} \`Mesajları Yönet\` | Yetkiniz yok.`));
-if(!args[0]) return message.channel.send(new Discord.MessageEmbed().setColor('GOLD').setThumbnail('https://cdn.glitch.com/6f5bb25b-c11b-4003-8a39-69490341df18%2F30f1dbd87f31428dbc4887f4dbc41d6e.gif').setTitle('Bir hata oldu!').setDescription(`${message.author} Yavaş mod için bir **saniye** belirtmedin! 🤔
+if(!args[0]) return message.channel.send(new Discord.MessageEmbed().setColor('GOLD').setThumbnail('https://tenor.com/view/sloth-walking-slow-slow-mo-asi-cuando-gif-9747136').setTitle('Bir hata oldu!').setDescription(`${message.author} Yavaş mod için bir **saniye** belirtmedin! 🤔
 
 **Örnek:**
 \`\`\`${client.ayarlar.prefix}yavaş-mod 60\`\`\``));
