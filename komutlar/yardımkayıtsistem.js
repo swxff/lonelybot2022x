@@ -6,8 +6,8 @@ exports.run = async (client, message, args) => {
     return this[Math.floor(Math.random() * this.length)];
   }
 
-let images = ['https://media.giphy.com/media/mBkM18U5OMSkTcDmeu/giphy.gif', 'https://media.giphy.com/media/RGRzukK0YNlQbZEUVP/giphy.gif'];
-message.channel.send(new Discord.MessageEmbed().setColor('#000001').setDescription(`**Lonely Ana Menüsüne Hoş Geldin Dostum :innocent:
+let images = ['https://cdn.discordapp.com/attachments/941759205977772114/942118845143973968/standard_4.gif'];
+message.channel.send(new Discord.MessageEmbed().setColor('#000001').setDescription(`**Lonely Kayıt Menüsüne Hoş Geldiniz :innocent:
 ${client.user} Kullanırken \`@Lonely\` rolünü en yukarıda tutunuz.**
 **
 🐝 \`${client.ayarlar.prefix}diğer\`
@@ -42,7 +42,6 @@ Aktiflik Sistem **(c!profile & c!profile [@etiket]**) **- ne kadar kayıt etmiş
 
 **🌟 \`${client.ayarlar.prefix}koruma aç\` & \`${client.ayarlar.prefix}koruma kapat\`**
 Aktif Koruma Sistem **7 Adet Sunucunuz için koruma sistem aktif edersin**
-
 **`).setThumbnail(message.author.avatarURL() ? message.author.avatarURL({dynamic: true}) : 'https://cdn.glitch.com/8e70d198-9ddc-40aa-b0c6-ccb4573f14a4%2F6499d2f1c46b106eed1e25892568aa55.png').setImage(images.random()))
 
 };

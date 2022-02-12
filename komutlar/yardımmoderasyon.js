@@ -6,9 +6,9 @@ exports.run = async (client, message, args) => {
     return this[Math.floor(Math.random() * this.length)];
   }
 
-let images = ['https://cdn.discordapp.com/attachments/941759205977772114/942111517397098556/xddx.gif'];
+let images = ['https://cdn.discordapp.com/attachments/941759205977772114/942118793075888148/standard_5.gif'];
 message.channel.send(new Discord.MessageEmbed().setColor('#000001').setDescription(`**Moderasyon Menüsüne Hoş Geldiniz 😇**
-\`\`\`${client.user.username} Kullanırken @CloudUP rolünü en yukarıda tutunuz.\`\`\`
+\`\`\`${client.user.username} Kullanırken @Lonely rolünü en yukarıda tutunuz.\`\`\`
 
 **\`${client.ayarlar.prefix}mute-sistem\`
 Chat ve Seste mute için güzel sistem
