@@ -29,7 +29,6 @@ Toplu rol ile hem alıp hem de verebileceğiniz sistem
 **Selam, küfür, reklam, büyük harf,** içerikler vardır
 **
 **
-
 **Müzik botu arıyorsan, Lonely Music tam senin istediğin gibi hizmetinde! » **[Tıkla](https://discord.com/oauth2/authorize?client_id=933838376237420654&scope=bot&permissions=0) 
 `).setThumbnail(message.author.avatarURL() ? message.author.avatarURL({dynamic: true}) : 'https://cdn.discordapp.com/attachments/942130580030636043/942130826542456883/anime-animeboy-goth-gothicstyle-redeyes-laughing-dark-aesthetic-anime-boy-manga-comics-book-person-transparent-png-723215.png').setImage(images.random()))
 

@@ -25,5 +25,5 @@ exports.conf = {
 }
 
 exports.help = {
-  name: 'up'
+  name: 'stat'
 };

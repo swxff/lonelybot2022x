@@ -11,25 +11,25 @@ message.channel.send(new Discord.MessageEmbed().setColor('#000001').setDescripti
 ${client.user} Kullanırken \`@Lonely\` rolünü en yukarıda tutunuz.
 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬**
 **
-🔥 \`${client.ayarlar.prefix}sunucu\` Menüsüne erişebilirsiniz.
+📋 \`${client.ayarlar.prefix}sunucu\` Menüsüne erişebilirsiniz.
 
-> Yasak tag, Oto isim, Komut mesaj, Fake hesap, 
-> Sunucu tema, Kanal \`&\` Rol arındır ve dahası..
+» Yasak tag, Oto isim, Komut mesaj, Fake hesap, 
+» Sunucu tema, Kanal \`&\` Rol arındır ve dahası..
 
-🦋 \`${client.ayarlar.prefix}moderasyon\` Menüsüne erişebilirsiniz.
+🛠️ \`${client.ayarlar.prefix}moderasyon\` Menüsüne erişebilirsiniz.
 
-> Mute, Karantina, Ban, Toplu rol, 
-> Sayaç \`&\` Oto rol, Kısıtlamalar ve dahası..
+» Mute, Karantina, Ban, Toplu rol, 
+» Sayaç \`&\` Oto rol, Kısıtlamalar ve dahası..
 
 📁 \`${client.ayarlar.prefix}kayıt-sistem\`
 
-> Kayıt Sistemi, Tag rol, Koruma,
-> Say, Aktiflik, Mesaj tag ve dahası..
+» Kayıt Sistemi, Tag rol, Koruma,
+» Say, Aktiflik, Mesaj tag ve dahası..
 
 🎮 \`${client.ayarlar.prefix}eğlence\` Menüsüne erişebilirsiniz.
 
-> Kaç cm, öp, aşk ölçer
-> tokat, fal ve dahası..
+» Kaç cm, öp, aşk ölçer
+» tokat, fal ve dahası..
 **
 
 **Müzik botu arıyorsan, Lonely Music tam senin istediğin gibi hizmetinde! » **[Tıkla](https://discord.com/oauth2/authorize?client_id=933838376237420654&scope=bot&permissions=0) 

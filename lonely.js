@@ -1,18 +1,15 @@
 const Discord = require("discord.js");
-const client = new Discord.Client();//gweep creative
+const client = new Discord.Client();
 const { Client, Util } = require("discord.js");
-const fs = require("fs");//gweep creative
-require("./util/eventLoader")(client);//gweep creative
-//gweep creative
+const fs = require("fs");
+require("./util/eventLoader")(client);
 const log = message => {
   console.log(`${message}`);
 };
-//gweep creative
 client.ayarlar = { 
-"prefix": ".", // prefix
-"sahip": "315875588906680330",// sahip
+"prefix": ".",
+"sahip": "315875588906680330",
 }
-//gweep creative
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
 fs.readdir("./komutlar/", (err, files) => {
@@ -27,7 +24,6 @@ fs.readdir("./komutlar/", (err, files) => {
     });
   });
 });
-//gweep creative
 client.reload = command => {
   return new Promise((resolve, reject) => {
     try {
@@ -51,7 +47,7 @@ client.reload = command => {
 client.load = command => {
   return new Promise((resolve, reject) => {
     try {
-      let cmd = require(`./komutlar/${command}`);//gweep creative
+      let cmd = require(`./komutlar/${command}`);
       client.commands.set(command, cmd);
       cmd.conf.aliases.forEach(alias => {
         client.aliases.set(alias, cmd.help.name);
@@ -62,7 +58,6 @@ client.load = command => {
     }
   });
 };
-//gweep creative
 client.unload = command => {
   return new Promise((resolve, reject) => {
     try {
@@ -74,10 +69,10 @@ client.unload = command => {
       });
       resolve();
     } catch (e) {
-      reject(e);//gweep creative
+      reject(e);
     }
-  });//gweep creative
-};//gweep creative
+  });
+};
 
 client.elevation = message => {
   if (!message.guild) {
@@ -89,12 +84,12 @@ client.elevation = message => {
   if (message.member.permissions.has("ADMINISTRATOR")) permlvl = 2;
   if (message.author.id === message.guild.owner.id) permlvl = 4;
   return permlvl;
-};//gweep creative
+};
 
 var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g
 
 const moment = require('moment');
-moment.locale('tr');//gweep creative
+moment.locale('tr');
 const { S_IFREG } = require("constants");
 const data = require('quick.db');
 const logs = require('discord-logs');
@@ -105,7 +100,6 @@ client.on('ready', async () => {
 client.user.setStatus('online');
 console.log(`${client.user.username} ismiyle bağlandım.`);
 })
-//gweep creative
 client.on('message', async message => {
 if(message.channel.type !== 'text') return;
 const datas = await data.fetch(`tag.${message.guild.id}`);
@@ -117,15 +111,15 @@ if(datas) return message.channel.send('`'+datas+'`');
 client.on('message', async message => {
 if(message.channel.type !== 'text') return;
 if(message.author.bot) return;
-if(message.content.startsWith(client.ayarlar.prefix+'afk')) return;//gweep creative
-if(message.mentions.members.first()) {//gweep creative
+if(message.content.startsWith(client.ayarlar.prefix+'afk')) return;
+if(message.mentions.members.first()) {
 let mention = message.mentions.members.first();
 const est = await data.fetch(`kullanıcı.${mention.id}.${message.guild.id}`);
 if(est) {
 message.channel.send(new Discord.MessageEmbed().setThumbnail(mention.user.avatarURL() ? mention.user.avatarURL({dynamic: true}) : 'https://cdn.discordapp.com/attachments/942130580030636043/942130826542456883/anime-animeboy-goth-gothicstyle-redeyes-laughing-dark-aesthetic-anime-boy-manga-comics-book-person-transparent-png-723215.png')
 .setTitle('Tıkladığın Kullanıcı AFK').setDescription(` \n**• __Sebep;__ \`${est}\`**`));
 }
-}//gweep creative
+}
 const stat = await data.fetch(`name.${message.author.id}.${message.guild.id}`);
 if(stat) {  
 message.member.setNickname(stat);
@@ -133,7 +127,7 @@ data.delete(`kullanıcı.${message.author.id}.${message.guild.id}`);
 data.delete(`name.${message.author.id}.${message.guild.id}`);
 message.channel.send(new Discord.MessageEmbed().setDescription(`${message.author} **Cihaz üzerine tekrardan hoş geldin!**`));
 }
-})//gweep creative
+})
 
 client.on('userUpdate', (oldUser, newUser) => {
 client.guilds.cache.forEach(async guild => {
@@ -141,10 +135,10 @@ if(!guild.members.cache.get(newUser.id)) return;
 const tagFetch = await data.fetch(`roltag.${guild.id}`);
 const roleFetch = await data.fetch(`tag.role.${guild.id}`);
 const logFetch = await data.fetch(`tag.log.${guild.id}`);
-if(!tagFetch || !roleFetch || !logFetch) return;//gweep creative
+if(!tagFetch || !roleFetch || !logFetch) return;
 let tag = tagFetch;
 let role = guild.roles.cache.get(roleFetch);
-let log = guild.channels.cach.eget(logFetch);//gweep creative
+let log = guild.channels.cach.eget(logFetch);
 if(oldUser.username === newUser.username) return;
 if(newUser.username.includes(tag) && !oldUser.username.includes(tag)) {
 log.send(new Discord.MessageEmbed()
@@ -154,23 +148,19 @@ guild.members.cache.get(newUser.id).roles.add(role.id);
 }
 if(oldUser.username.includes(tag) && !newUser.username.includes(tag)) {
 log.send(new Discord.MessageEmbed()
-.setTitle('Lonely - TAG Çıkarıldı.')//gweep creative
+.setTitle('Lonely - TAG Çıkarıldı.')
 .setColor('#f1c335')
 .setDescription(`${newUser} **Aramızdan ayrıldı. \`${tag}\` tagını çıkardığı için ${role} rolü alındı!**`));
 guild.members.cache.get(newUser.id).roles.remove(role.id);
 }
 })
 })
-//gweep creative
-//gweep creative
 client.on('roleDelete', async role => {
   const sistem = await data.fetch(`korumalar.${role.guild.id}`);
   if(!sistem) return;
-  //gweep creative
   let guild = role.guild;
   const entry = await guild.fetchAuditLogs({ type: "ROLE_DELETE" }).then(audit => audit.entries.first());
   let member = entry.executor;
-  //gweep creative
   if(member.id == guild.owner.user.id) return;
   let yetkili = guild.members.cache.get(member.id);
   yetkili.roles.cache.forEach(s => {
@@ -181,11 +171,9 @@ client.on('roleDelete', async role => {
   client.on('roleUpdate', async (oldRole, newRole) => {
   const sistem = await data.fetch(`korumalar.${newRole.guild.id}`);
   if(!sistem) return;
-  //gweep creative
   let guild = newRole.guild;
   const entry = await guild.fetchAuditLogs({ type: "ROLE_UPDATE" }).then(audit => audit.entries.first());
   let member = entry.executor;
-  //gweep creative
   if(oldRole.permissions.has('ADMINISTRATOR') && newRole.permissions.has('ADMINISTRATOR')) {
   if(member.id == guild.owner.user.id) return;
   let yetkili = guild.members.cache.get(member.id);
@@ -194,56 +182,44 @@ client.on('roleDelete', async role => {
   })
   }
   });
-  //gweep creative
   client.on('guildBanAdd', async member => {
   const sistem = await data.fetch(`korumalar.${member.guild.id}`);
   if(!sistem) return;
-  //gweep creative
   let guild = member.guild;
   const entry = await guild.fetchAuditLogs({ type: "MEMBER_BAN_ADD" }).then(audit => audit.entries.first());
   let yetkili = entry.executor;
-  //gweep creative
   if(yetkili.id == guild.owner.user.id) return;
   yetkili.roles.cache.forEach(s => {
   if(s.permissions.has('BAN_MEMBERS')) return yetkili.roles.remove(s.id);
   })
   guild.members.unban(member.id);
   })
-  //gweep creative
   client.on('channelDelete', async channel => {
   const sistem = await data.fetch(`korumalar.${channel.guild.id}`);
   if(!sistem) return;
-  //gweep creative
   let guild = channel.guild;
   const entry = await guild.fetchAuditLogs({ type: "CHANNEL_DELETE" }).then(audit => audit.entries.first());
   let member = entry.executor;
-  //gweep creative
   if(member.id == guild.owner.user.id) return;
   let yetkili = guild.members.cache.get(member.id);
   yetkili.roles.cache.forEach(s => {
   if(s.permissions.has('MANAGE_CHANNELS')) return yetkili.roles.remove(s.id);
   })
-  //gweep creative
   channel.clone({ name: channel.name });
   })
-  //gweep creative
   client.on('emojiDelete', async emoji => {
   const sistem = await data.fetch(`korumalar.${emoji.guild.id}`);
   if(!sistem) return;
-  //gweep creative
   let guild = emoji.guild;
   const entry = await guild.fetchAuditLogs({ type: "EMOJI_DELETE" }).then(audit => audit.entries.first());
   let member = entry.executor;
-  //gweep creative
   if(member.id == guild.owner.user.id) return;
   let yetkili = guild.members.cache.get(member.id);
   yetkili.roles.cache.forEach(s => {
   if(s.permissions.has('MANAGE_EMOJIS')) return yetkili.roles.remove(s.id);
   })
-  //gweep creative
   guild.emojis.create(emoji.url, emoji.name);
   })
-//gweep creative
   client.on('guildMemberAdd', async member => {
   let user = member.user;
   let guild = member.guild;
@@ -300,7 +276,7 @@ client.on('guildMemberRemove', async member => {
 client.on('message', message => {
   if(message.channel.type !== 'text') return;
   let mesaj = message.content.toLocaleLowerCase();
-if(mesaj.includes('cloudup')) message.react('🤫');
+if(mesaj.includes('lonely')) message.react('🤫');
 })
 
 client.on('message', async message => {

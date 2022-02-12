@@ -1,11 +1,11 @@
 {
   "name": "hello-express",
   "version": "1.0.0",
-  "description": "Gweep Creative#0001 | RabeL",
-  "main": "gweep.js",
+  "description": "Swaff",
+  "main": "lonely.js",
   "scripts": {
-    "watch": "nodemon gweep.js",
-    "start": "node gweep.js"
+    "watch": "nodemon lonely.js",
+    "start": "node lonely.js"
   },
   "dependencies": {
     "canvacord": "^5.0.7",
@@ -24,8 +24,7 @@
   },
   "license": "MIT",
   "keywords": [
-    "chimp",
-    "chimp#0110"
+    "swxff#0001"
   ],
   "devDependencies": {
     "nodemon": "^2.0.4"

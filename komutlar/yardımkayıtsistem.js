@@ -32,13 +32,13 @@ Tag ayarlamak için kullanımı basit sistem
 Sunucunuz da tag ve ya emoji tarzı kullananlar için stabil sistem**
 
 **🦋 \`${client.ayarlar.prefix}isim\`**
-İsmin başına birşey ekletmek için **l!isim-tag** kullanabilirsin. Etiketlediğiniz **üyenin ismini** değişirsiniz
+İsmin başına birşey ekletmek için **.isim-tag** kullanabilirsin. Etiketlediğiniz **üyenin ismini** değişirsiniz
 
 **🍏 \`${client.ayarlar.prefix}say\`**
 Sunucu içerisinde ki **toplam üye**, **taglı üye**, **aktif üye**, **erkek üye**, **kadın üye** ve **Nitro boost** seviyenizi gösterir. **${client.ayarlar.prefix}mesaj-tag** ve **${client.ayarlar.prefix}sunucu-kayıt** sistemlerini aktif edin
 
 **🎐 \`${client.ayarlar.prefix}aktiflik aç\` & \`${client.ayarlar.prefix}aktiflik kapat\`**
-Aktiflik Sistem **(c!profile & c!profile [@etiket]**) **- ne kadar kayıt etmiş bilgilerini görebilirsin**
+Aktiflik Sistem **(.profile & .profile [@etiket]**) **- ne kadar kayıt etmiş bilgilerini görebilirsin**
 
 **🌟 \`${client.ayarlar.prefix}koruma aç\` & \`${client.ayarlar.prefix}koruma kapat\`**
 Aktif Koruma Sistem **7 Adet Sunucunuz için koruma sistem aktif edersin**
