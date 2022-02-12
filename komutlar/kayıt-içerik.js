@@ -7,7 +7,7 @@ exports.run = async (client, message, args) => {
   }
 
 let images = ['https://media.giphy.com/media/mBkM18U5OMSkTcDmeu/giphy.gif', 'https://media.giphy.com/media/RGRzukK0YNlQbZEUVP/giphy.gif'];
-message.channel.send(new Discord.MessageEmbed().setColor('#000001').setDescription(`**CloudUP Ana Menüsüne Hoş Geldin Dostum :innocent:
+message.channel.send(new Discord.MessageEmbed().setColor('#000001').setDescription(`**Lonely Ana Menüsüne Hoş Geldin Dostum :innocent:
 ${client.user} Kullanırken \`@CloudUP\` rolünü en yukarıda tutunuz.**
 **
 🐝 \`${client.ayarlar.prefix}diğer\`

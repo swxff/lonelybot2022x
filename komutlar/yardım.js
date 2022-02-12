@@ -10,7 +10,7 @@ let images = ['https://media.giphy.com/media/mBkM18U5OMSkTcDmeu/giphy.gif', 'htt
 message.channel.send(new Discord.MessageEmbed().setColor('#000001').setDescription(`**CloudUP Ana Menüsüne Hoş Geldin Dostum :innocent:
 ${client.user} Kullanırken \`@CloudUP\` rolünü en yukarıda tutunuz.**
 **
-🐝 \`${client.ayarlar.prefix}kayıt-içerik\`
+🐝 \`${client.ayarlar.prefix}kayıt-sistem\`
 
 > Kayıt, Kutulu \`&\` Kutusuz, Diğer, Tag rol,
 > Koruma, Say, Aktiflik, Mesaj tag

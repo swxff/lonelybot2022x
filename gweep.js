@@ -9,9 +9,9 @@ const log = message => {
 };
 //gweep creative
 client.ayarlar = { 
-"token": "NzQ1MjczNjQ4ODA1NDQ1Njcz.XzvYLA.A4BqBrymCjeUJlp9uiLuOA2Heak", // token
+"token": "OTQxMzk0MjE4NDk1MTE1Mjk1.YgVTrw.uvv2BiNlLaUv1WuwzJdlKRzcYGc", // token
 "prefix": "-", // prefix
-"sahip": "586822327568695317",// sahip
+"sahip": "315875588906680330",// sahip
 }
 //gweep creative
 client.commands = new Discord.Collection();
