@@ -14,7 +14,7 @@ ${client.user} Kullanırken \`@Lonely\` rolünü en yukarıda tutunuz.
 🔥 \`${client.ayarlar.prefix}sunucu\` Menüsüne erişebilirsiniz.
 
 > Yasak tag, Oto isim, Komut mesaj, Fake hesap, 
-> Sunucu tema, Kanal arındır \`&\` Rol arındır ve dahası..
+> Sunucu tema, Kanal \`&\` Rol arındır ve dahası..
 
 🦋 \`${client.ayarlar.prefix}moderasyon\` Menüsüne erişebilirsiniz.
 
@@ -30,7 +30,10 @@ ${client.user} Kullanırken \`@Lonely\` rolünü en yukarıda tutunuz.
 
 > Kaç cm, öp, aşk ölçer
 > tokat, fal ve dahası..
-**`).setThumbnail(message.author.avatarURL() ? message.author.avatarURL({dynamic: true}) : 'https://cdn.discordapp.com/attachments/933845017167020092/942086924905086986/Aesthetic-Anime-Pfp-Background-PNG.png').setImage(images.random()))
+**
+
+Müzik botu arıyorsan, Lonely Music Bot tam senin istediğin gibi hizmetinde! Şuradan ulaşabilirsin > 
+`).setThumbnail(message.author.avatarURL() ? message.author.avatarURL({dynamic: true}) : 'https://cdn.discordapp.com/attachments/933845017167020092/942086924905086986/Aesthetic-Anime-Pfp-Background-PNG.png').setImage(images.random()))
 
 };
 exports.conf = {

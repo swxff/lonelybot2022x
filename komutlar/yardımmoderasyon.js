@@ -10,10 +10,10 @@ let images = ['https://cdn.discordapp.com/attachments/941759205977772114/9421187
 message.channel.send(new Discord.MessageEmbed().setColor('#000001').setDescription(`**Moderasyon Menüsüne Hoş Geldiniz 😇**
 \`\`\`${client.user.username} Kullanırken @Lonely rolünü en yukarıda tutunuz.\`\`\`
 
-**\`${client.ayarlar.prefix}mute-sistem\`
+🔇**\`${client.ayarlar.prefix}mute-sistem\`
 Chat ve Seste mute için güzel sistem
 
-\`${client.ayarlar.prefix}jail-sistem\`
+🔒 \`${client.ayarlar.prefix}jail-sistem\`
 Etiketlediğiniz Üyeyi karantina altına al
 
 ❌ \`${client.ayarlar.prefix}ban-sistem\`
@@ -28,7 +28,7 @@ Toplu rol ile hem alıp hem de verebileceğiniz sistem
 🛎️ **\`${client.ayarlar.prefix}kısıtlamalar\`**
 **Selam, küfür, reklam, büyük harf,** içerikler vardır
 **
-**`).setThumbnail(message.author.avatarURL() ? message.author.avatarURL({dynamic: true}) : 'https://cdn.glitch.com/8e70d198-9ddc-40aa-b0c6-ccb4573f14a4%2F6499d2f1c46b106eed1e25892568aa55.png').setImage(images.random()))
+**`).setThumbnail(message.author.avatarURL() ? message.author.avatarURL({dynamic: true}) : 'https://cdn.discordapp.com/attachments/942130580030636043/942130826542456883/anime-animeboy-goth-gothicstyle-redeyes-laughing-dark-aesthetic-anime-boy-manga-comics-book-person-transparent-png-723215.png').setImage(images.random()))
 
 };
 exports.conf = {

@@ -4,9 +4,9 @@ const Discord = require("discord.js");
 module.exports = async client => {
 
 client.on('message', message => {
-    client.user.setActivity(`.yardım `, {
+    client.user.setActivity(`🛠️ | .yardım `, {
       status: "online",
-      type: "PLAYING",
+      type: "WATCHING",
       url: "https://www.youtube.com/c/Swaff"
     })
 })
