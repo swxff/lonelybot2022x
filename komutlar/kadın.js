@@ -41,7 +41,7 @@ if(isim && nn) member.setNickname(n+isim);
 if(isim && !n) member.setNickname(isim);
 if(!isim && n) member.setNickname(n+member.user.username);
 
-message.channel.send(nn.setThumbnail(member.user.avatarURL() ? member.user.avatarURL({dynamic: true}) : 'https://cdn.glitch.com/8e70d198-9ddc-40aa-b0c6-ccb4573f14a4%2F6499d2f1c46b106eed1e25892568aa55.png').setTitle(`İşte bu kadar! [ Kayıt Başarılı. ]`)
+message.channel.send(nn.setThumbnail(member.user.avatarURL() ? member.user.avatarURL({dynamic: true}) : 'https://cdn.discordapp.com/attachments/941759205977772114/942128313420353556/anime-animeboy-goth-gothicstyle-redeyes-laughing-dark-aesthetic-anime-boy-manga-comics-book-person-transparent-png-723215.png').setTitle(`İşte bu kadar! [ Kayıt Başarılı. ]`)
 .setDescription(`${member} **Kullanıcısına ${kadın} rolü verildi.**
 
 ${message.author} **Kayıt sayın:** \`${client.ayarlar.prefix}profil yazarak görebilirsin!\`
