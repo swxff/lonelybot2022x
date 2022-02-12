@@ -18,7 +18,7 @@ const dataa = await data.fetch(`say.erkek.${message.author.id}.${message.guild.i
 const embed = new Discord.MessageEmbed()
 .setColor('#f1c335')
 .setTitle(`${message.author.username} **\`-\`** Aktiflik Bilgi`)
-.setThumbnail(message.author.avatarURL() ? message.author.avatarURL({dynamic: true}) : 'https://cdn.glitch.com/8e70d198-9ddc-40aa-b0c6-ccb4573f14a4%2F6499d2f1c46b106eed1e25892568aa55.png')
+.setThumbnail(message.author.avatarURL() ? message.author.avatarURL({dynamic: true}) : 'https://cdn.discordapp.com/attachments/942130580030636043/942130826542456883/anime-animeboy-goth-gothicstyle-redeyes-laughing-dark-aesthetic-anime-boy-manga-comics-book-person-transparent-png-723215.png')
 .setImage('https://media.giphy.com/media/PkWuoeWTF6UvVMI0ta/giphy.gif?width=400&height=94')
 .setDescription(`⭐ **T. Kayıt Sayısı:** \`${Number(dataa ? dataa : '0')+Number(datas ? datas : '0')}\`
 **Erkek Sayısı:** \`${dataa ? dataa : 'veri yok.'}\`
@@ -31,7 +31,7 @@ const dataa = await data.fetch(`say.erkek.${message.mentions.members.first().id}
 const embed = new Discord.MessageEmbed()
 .setColor('#f1c335')
 .setTitle(`${message.mentions.members.first().user.username} **\`-\`** Aktiflik Bilgi`)
-.setThumbnail(message.mentions.members.first().user.avatarURL() ? message.mentions.members.first().user.avatarURL({dynamic: true}) : 'https://cdn.glitch.com/8e70d198-9ddc-40aa-b0c6-ccb4573f14a4%2F6499d2f1c46b106eed1e25892568aa55.png')
+.setThumbnail(message.mentions.members.first().user.avatarURL() ? message.mentions.members.first().user.avatarURL({dynamic: true}) : 'https://cdn.discordapp.com/attachments/942130580030636043/942130826542456883/anime-animeboy-goth-gothicstyle-redeyes-laughing-dark-aesthetic-anime-boy-manga-comics-book-person-transparent-png-723215.png')
 .setImage('https://media.giphy.com/media/PkWuoeWTF6UvVMI0ta/giphy.gif?width=400&height=94')
 .setDescription(`⭐ **T. Kayıt Sayısı:** \`${Number(dataa ? dataa : '0')+Number(datas ? datas : '0')}\`
 **Erkek Sayısı:** \`${dataa ? dataa : 'veri yok.'}\`

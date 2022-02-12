@@ -9,8 +9,8 @@ exports.run = async (client, message, args) => {
 
 const datas = await data.fetch(`erkek.${message.guild.id}`);
 const datass = await data.fetch(`kadın.${message.guild.id}`);
-if(!datas) return message.channel.send(new Discord.MessageEmbed().setTitle('Bir hata oldu!').setDescription(`**${client.ayarlar.prefix}erkek-role @roleetiket** olarak erkek rolünü aktif etmelisin!`).setFooter('Erkek rolü aktif değil', message.author.avatarURL() ? message.author.avatarURL({dynamic: true}) : 'https://cdn.glitch.com/8e70d198-9ddc-40aa-b0c6-ccb4573f14a4%2F6499d2f1c46b106eed1e25892568aa55.png'))
-if(!datass) return message.channel.send(new Discord.MessageEmbed().setTitle('Bir hata oldu!').setDescription(`**${client.ayarlar.prefix}kadın-role @roleetiket** olarak erkek rolünü aktif etmelisin!`).setFooter('Kadın rolü aktif değil', message.author.avatarURL() ? message.author.avatarURL({dynamic: true}) : 'https://cdn.glitch.com/8e70d198-9ddc-40aa-b0c6-ccb4573f14a4%2F6499d2f1c46b106eed1e25892568aa55.png'))
+if(!datas) return message.channel.send(new Discord.MessageEmbed().setTitle('Bir hata oldu!').setDescription(`**${client.ayarlar.prefix}erkek-role @roleetiket** olarak erkek rolünü aktif etmelisin!`).setFooter('Erkek rolü aktif değil', message.author.avatarURL() ? message.author.avatarURL({dynamic: true}) : 'https://cdn.discordapp.com/attachments/942130580030636043/942130826542456883/anime-animeboy-goth-gothicstyle-redeyes-laughing-dark-aesthetic-anime-boy-manga-comics-book-person-transparent-png-723215.png'))
+if(!datass) return message.channel.send(new Discord.MessageEmbed().setTitle('Bir hata oldu!').setDescription(`**${client.ayarlar.prefix}kadın-role @roleetiket** olarak erkek rolünü aktif etmelisin!`).setFooter('Kadın rolü aktif değil', message.author.avatarURL() ? message.author.avatarURL({dynamic: true}) : 'https://cdn.discordapp.com/attachments/942130580030636043/942130826542456883/anime-animeboy-goth-gothicstyle-redeyes-laughing-dark-aesthetic-anime-boy-manga-comics-book-person-transparent-png-723215.png'))
 
 let images = [
 'https://media.giphy.com/media/2kW2UcfY5fhXY3ybX5/giphy.gif',
@@ -37,7 +37,7 @@ tag = message.guild.members.cache.filter(a => a.user.username.includes(data.fetc
 }
 
 message.channel.send(new Discord.MessageEmbed()
-.setAuthor(`Sunucu durumunu istedi: ${message.author.tag}`, message.author.avatarURL() ? message.author.avatarURL({dynamic: true}) : 'https://cdn.glitch.com/8e70d198-9ddc-40aa-b0c6-ccb4573f14a4%2F6499d2f1c46b106eed1e25892568aa55.png')
+.setAuthor(`Sunucu durumunu istedi: ${message.author.tag}`, message.author.avatarURL() ? message.author.avatarURL({dynamic: true}) : 'https://cdn.discordapp.com/attachments/942130580030636043/942130826542456883/anime-animeboy-goth-gothicstyle-redeyes-laughing-dark-aesthetic-anime-boy-manga-comics-book-person-transparent-png-723215.png')
 .setThumbnail(images.random())
 .setDescription(`\`\`\`[${client.ayarlar.prefix}tag] ile taglı sayını ayarlayabilirsin.\`\`\`
 **Toplam Üye** ${toplamüye}

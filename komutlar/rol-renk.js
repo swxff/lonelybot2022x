@@ -3,19 +3,19 @@ const data = require('quick.db');
 
 
 exports.run = async (client, message, args) => {
-  if(!message.member.permissions.has('MANAGE_ROLES')) return message.channel.send(new Discord.MessageEmbed().setThumbnail(message.author.avatarURL() ? message.author.avatarURL({dynamic: true}) : 'https://cdn.glitch.com/8e70d198-9ddc-40aa-b0c6-ccb4573f14a4%2F6499d2f1c46b106eed1e25892568aa55.png').setImage('https://cdn.glitch.com/0c8ef551-5187-48a8-9daf-f2cc35630f21%2Fyoneticigif.gif').setTitle('Bir hata oldu!').setDescription(`• \`${client.ayarlar.prefix}rol-renk\` **kullanmak için,** \`Rolleri Yönet\` **yetkisine sahip olman gerekiyor.**`));
+  if(!message.member.permissions.has('MANAGE_ROLES')) return message.channel.send(new Discord.MessageEmbed().setThumbnail(message.author.avatarURL() ? message.author.avatarURL({dynamic: true}) : 'https://cdn.discordapp.com/attachments/942130580030636043/942130826542456883/anime-animeboy-goth-gothicstyle-redeyes-laughing-dark-aesthetic-anime-boy-manga-comics-book-person-transparent-png-723215.png').setImage('https://cdn.glitch.com/0c8ef551-5187-48a8-9daf-f2cc35630f21%2Fyoneticigif.gif').setTitle('Bir hata oldu!').setDescription(`• \`${client.ayarlar.prefix}rol-renk\` **kullanmak için,** \`Rolleri Yönet\` **yetkisine sahip olman gerekiyor.**`));
 
   let role;
   if(!message.mentions.roles.first()) {
   if(!args[0]) return message.channel.send(new Discord.MessageEmbed().setColor('#00567e')
   .setTitle(`**Bir \`ROL ID\` veya \`ROL\` etiketlemeyi unuttunuz.**
   
-  **Örnek: \`c!rol-renk 663408945716658xxx WHITE\`**`));
+  **Örnek: \`.rol-renk 663408945716658xxx WHITE\`**`));
   role = message.guild.roles.cache.get(args[0]);
   if(!role) return message.channel.send(new Discord.MessageEmbed().setColor('#00567e')
   .setTitle(`**Bir \`ROL ID\` veya \`ROL\` etiketlemeyi unuttunuz.**
   
-  **Örnek: \`c!rol-renk 663408945716658xxx WHITE\`**`)); 
+  **Örnek: \`.rol-renk 663408945716658xxx WHITE\`**`)); 
   } else {
   role = message.mentions.roles.first(); 
   }
@@ -23,7 +23,7 @@ exports.run = async (client, message, args) => {
   if(!args[1]) return message.channel.send(new Discord.MessageEmbed().setColor('#00567e')
 .setTitle(`**Bir \`Büyük Renk İsmi\` & RENK KOD: \`FFC0CB\` koymayı unuttunuz.**
 
-**Örnek: \`c!rol-renk 663408945716658xxx PURPLE\`**`));
+**Örnek: \`.rol-renk 663408945716658xxx PURPLE\`**`));
 
 let renk = args[1].replace('mavi', '#6999ff')
 .replace('yeşil', '#69ff80')
