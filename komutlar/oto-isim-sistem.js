@@ -17,7 +17,7 @@ message.channel.send(new Discord.MessageEmbed().setColor('#000001').setTitle('Lo
 **Ayarlı olan tagınızı kapatır**
 
 \`${client.ayarlar.prefix}oto-tag-log-kapat\`
-**Ayarlı olan kanalı kapatır**`).setImage('https://cdn.discordapp.com/attachments/766404341434286084/766820389195087882/8e70d198-9ddc-40aa-b0c6-ccb4573f14a4252FScreenshot_3.png'));
+**Ayarlı olan kanalı kapatır**`).setImage('https://cdn.discordapp.com/attachments/942130580030636043/942143484775759962/122c7f909e514cc9f4c1b12fc55a1219.png'));
 
 };
 exports.conf = {

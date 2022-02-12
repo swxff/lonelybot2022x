@@ -9,7 +9,6 @@ const log = message => {
 };
 //gweep creative
 client.ayarlar = { 
-"token": "OTQxMzk0MjE4NDk1MTE1Mjk1.YgVTrw.uvv2BiNlLaUv1WuwzJdlKRzcYGc", // token
 "prefix": ".", // prefix
 "sahip": "315875588906680330",// sahip
 }
@@ -94,7 +93,6 @@ client.elevation = message => {
 
 var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g
 
-client.login(client.ayarlar.token);
 const moment = require('moment');
 moment.locale('tr');//gweep creative
 const { S_IFREG } = require("constants");
@@ -291,7 +289,7 @@ client.on('guildMemberRemove', async member => {
   if(!sistemSayı) return;
   let sayı = Number(sistemSayı);
   if(!sayı) return;
-  const attachment = new Discord.MessageAttachment('https://cdn.discordapp.com/attachments/766636339361480727/766636500891729930/giphy.gif');
+  const attachment = new Discord.MessageAttachment('https://tenor.com/view/anime-gif-23962162');
   channel.send(`> \`${user.tag}\` **Gittiğini fark ettim Aaaaaa!**
   
   > **Toplam da** \`${guild.memberCount}\` **Kişi olduk!** \`${sayı}\` **Kullanıcı olmasına** \`${sayı-Number(guild.memberCount)}\` **Kullanıcı kaldı!**`, attachment)
@@ -455,4 +453,12 @@ message.channel.send(`${message.author} ${command.respond}`);
 };
 });
 
-client.login(client.ayarlar.token);
+client.login(process.env.TOKEN);
+
+const emmmmbed = new Discord.MessageEmbed()
+.addField(`Lonely Bot ©️  | Teşekkürler`, `**Selamlar, Ben Swaff (Developer) Öncelikle Botumuzu Eklediğiniz İçin Teşekkürler!**`)
+.addField(`Lonely Bot ©️  | Nasıl Kullanılır?`, `**Lonely  botun tüm özelliklerinden yararlanabilmek için sadece \`l!yardım\` yazmanız yeterlidir.**`)
+.setFooter(`Lonely Bot ©️  | 2022`)
+  .setImage("https://cdn.discordapp.com/attachments/941759205977772114/942111517397098556/xddx.gif")
+  .setThumbnail("https://cdn.discordapp.com/attachments/942130580030636043/942130826542456883/anime-animeboy-goth-gothicstyle-redeyes-laughing-dark-aesthetic-anime-boy-manga-comics-book-person-transparent-png-723215.png")
+.setTimestamp();
