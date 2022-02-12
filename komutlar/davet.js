@@ -12,9 +12,8 @@ message.channel.send(new Discord.MessageEmbed()
 **Rolsüz Davet İçin:** [Buraya tıkla](https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&scope=bot&permissions=0)
 \`\`\`discordapp.com/oauth2/authorize?client_id=${client.user.id}&scope=bot&permissions=0\`\`\`
 
-**Rollü Davet İçin:** [Buraya tıkla](https://discord.com/invite/codare)
-\`\`\`discord.gg/codare\`\`\``));
-
+`));
+  
 };
 exports.conf = {
   enabled: true,

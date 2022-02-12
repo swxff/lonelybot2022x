@@ -28,8 +28,8 @@ ${client.user} Kullanırken \`@Lonely\` rolünü en yukarıda tutunuz.
 
 🎮 \`${client.ayarlar.prefix}eğlence\` Menüsüne erişebilirsiniz.
 
-> doldurulcak
-> doldurulcak
+> Kaç cm, öp, aşk ölçer
+> tokat, fal ve dahası..
 **`).setThumbnail(message.author.avatarURL() ? message.author.avatarURL({dynamic: true}) : 'https://cdn.discordapp.com/attachments/933845017167020092/942086924905086986/Aesthetic-Anime-Pfp-Background-PNG.png').setImage(images.random()))
 
 };
